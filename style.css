@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: monospace, sans-serif;
+}
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 50px 0px 30px 0px;
+  text-align: center;
+  font-size: 40px;
+}
+header p {
+  font-size: 20px;
+}
+
+.pads {
+  background: rgb(26, 92, 114);
+  width: 100%;
+  display: flex;
+  cursor: pointer;
+}
+.pads > div {
+  height: 100px;
+  width: 100px;
+  flex: 1;
+}
+
+.pad1 {
+}
+.pad2 {
+  background: #16368d;
+}
+.pad3 {
+  background: #39a070;
+}
+.pad4 {
+  background: #160e88;
+}
+.pad5 {
+  background: #085f29;
+}
+.pad6 {
+  background: #09526e;
+}
+
+#thefile {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 100;
+}
+
+#canvas {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 80%;
+}
+
+audio {
+  position: fixed;
+  left: 10px;
+  bottom: 140px;
+  width: calc(100% - 20px);
+}
